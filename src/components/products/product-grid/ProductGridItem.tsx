@@ -25,17 +25,14 @@ export const ProductGridItem = ({ product }: Props) => {
           height={500}
           loading="lazy"
         />
-
-        <div className="p-4 flex flex-col">
-          <Link
-            className="hover:text-blue-600"
-            href={`/product/${product.slug}`}
-          >
-            {product.title}
-          </Link>
-          <span className="font-bold">${product.price}</span>
-        </div>
       </Link>
+
+      <div className="p-4 flex flex-col">
+        <Link className="hover:text-blue-600" href={`/product/${product.slug}`}>
+          {product.title}
+        </Link>
+        <span className="font-bold">${product.price}</span>
+      </div>
     </div>
   );
 };
