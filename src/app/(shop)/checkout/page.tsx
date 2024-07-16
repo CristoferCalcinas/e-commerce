@@ -76,7 +76,7 @@ export default function CheckoutPage() {
               <p className="mb-5">
                 {/* Disclamer */}
                 <span className="text-sm">
-                  Al hacer click en "Colocar Orden", aceptas nuestros
+                  Al hacer click en Colocar &quot;Orden&quot;, aceptas nuestros
                   <a href="#" className="underline">
                     terminos y condiciones
                   </a>{" "}
