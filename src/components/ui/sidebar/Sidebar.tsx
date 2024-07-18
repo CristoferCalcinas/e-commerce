@@ -92,7 +92,7 @@ export const Sidebar = () => {
         {isAuthenticated && (
           <button
             className="flex w-full items-center mt-10 p-2 hover:bg-gray-100 rounded transition-all"
-            onClick={() => (window.location.replace("/"), logout())}
+            onClick={() => (logout(), window.location.replace("/"))}
           >
             <IoLogOutOutline size={30} />
             <span className="ml-3 text-xl">Salir</span>
@@ -124,7 +124,8 @@ export const Sidebar = () => {
             </Link>
 
             <Link
-              href="/"
+              onClick={() => closeMenu()}
+              href="/admin/orders"
               className="flex items-center mt-10 p-2 hover:bg-gray-100 rounded transition-all"
             >
               <IoTicketOutline size={30} />
